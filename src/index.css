@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #FFF7ED;
+  background: #FFF7ED;
   font-family: "Inter", sans-serif;
 }
 
@@ -19,10 +19,12 @@ body {
 }
 
 header {
+  max-width: 1280px;
   height: 110px;
   display: flex;
   align-items: center;
   padding-block: 10px;
+  margin: 0 auto;
 }
 
 header .site-logo {
@@ -64,14 +66,21 @@ header a:hover {
 
 /*** HOME PAGE ***/
 .home-container {
+  display: flex;
+  align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home-hero.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 350px;
+  min-height: 500px;
   color: white;
   padding: 45px 23px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .home-container h1 {
@@ -90,7 +99,7 @@ header a:hover {
   text-decoration: none;
   background-color: #FF8C38;
   border: none;
-  width: 100%;
+  width: 200px;
   margin-top: 27px;
   padding-block: .75rem;
   color: white;
@@ -106,6 +115,11 @@ header a:hover {
 
 
 /*** ABOUT PAGE ***/
+.about-page-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .about-hero-image {
   max-width: 100%;
 }
@@ -147,6 +161,8 @@ header a:hover {
 
 /*** VAN PAGES ***/
 .van-list-container {
+  max-width: 1080px;
+  margin: 0 auto;
   padding-inline: 23px
 }
 
@@ -154,7 +170,7 @@ header a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  gap: 34px;
+  gap: 30px;
   margin-top: 57px;
 }
 
