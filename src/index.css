@@ -506,6 +506,7 @@ i[class*='van-type-'] {
   font-family: "Inter", sans-serif;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   font-weight: 400;
+  font-size: 16px;
 }
 
 .login-form > input:focus {
@@ -529,4 +530,5 @@ i[class*='van-type-'] {
   margin-top: 22px;
   color: white;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
