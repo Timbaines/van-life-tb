@@ -15,13 +15,8 @@ export default function VanDetail() {
     }, [params.id])
 
     /**
-     * Challenge: When a filter is applied, change the text of
-     * the button to say "Back to luxury vans" (e.g.) instead of
-     * "Back to all vans".
-     *
-     * As usual, there's more than one way to solve this, so just
-     * give it your best shot
-     */
+     Add Catch Err
+     **/
 
     const search = location.state?.search || ""
     const type = location.state?.type || "all"
