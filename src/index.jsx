@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
-import Vans from './pages/Vans/Vans.jsx';
+import Vans from './pages/Vans/Vans';
+import NotFound from "./pages/NotFound";
 import VanDetail from './pages/Vans/VanDetail.jsx';
 import Dashboard from "./pages/Host/Dashboard";
 import Income from "./pages/Host/Income";
@@ -39,6 +40,7 @@ export default function App() {
                             <Route path="photos" element={<HostVanPhotos />} />
                         </Route>
                     </Route>
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>
