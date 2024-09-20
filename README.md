@@ -1,15 +1,29 @@
 # Van Life
 
 
-### Issues 
+## About
+VanLife is a React-based web application designed to simplify the process of renting vans for your travel adventures. It connects users with a variety of van rental options, details, pricing, images and reviews.
 
-Had to increase Buffer size in order to push to Github:
+### User authentication
 
-Type this command:
+Users can access the login page with the credentials below:
 
-git config http.postBuffer 524288000
+#### Username: b@b.com
 
-error on mac and solved with this command git config --global http.postBuffer 157286400
+#### Password: p123
 
-Todo:
-Add catch err to VanDetail, HostVans and HostVanDetail Page
+## Technologies
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+
+## Credits
+
+![Scrimba](https://img.shields.io/badge/scrimba-2B283A?style=for-the-badge&logo=scrimba&logoColor=white)
+
+`Scrimba - Front End Developer Career Path
+https://scrimba.com`
