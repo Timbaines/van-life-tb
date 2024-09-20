@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff7ed;
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
 }
 
@@ -81,10 +81,10 @@ footer {
   height: 74px;
   display: flex;
   flex-shrink: 0;
-  justify-content: center;
   align-items: center;
-  margin-top: auto;
+  justify-content: center;
   font-weight: 500;
+  margin-top: auto;
 }
 
 .link-button {
@@ -116,7 +116,10 @@ footer {
 }
 
 /*** HOME PAGE ***/
-.home-container {
+.section-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
   url("./assets/images/home-hero.png") no-repeat center center;
   -webkit-background-size: cover;
@@ -128,17 +131,19 @@ footer {
   padding: 45px 23px;
 }
 
-.home-container h1 {
+.heading {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 42px;
+  max-width: 60%;
 }
 
-.home-container p {
+.hero-content {
   line-height: 24px;
+  max-width: 55%;
 }
 
-.home-container a {
+.section-hero a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -152,13 +157,19 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
+  max-width: 30%;
 }
 
-.home-container a:hover {
+.section-hero a:hover {
   transform: translate(1px, 1px);
 }
 
 /*** ABOUT PAGE ***/
+.about-page-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .about-hero-image {
   max-width: 100%;
 }
@@ -195,6 +206,10 @@ footer {
   background-color: #161616;
   color: white;
   border-radius: 10px;
+}
+
+.row {
+  max-width: 1366px;
 }
 
 /*** VAN PAGES ***/
@@ -739,4 +754,35 @@ img.graph {
 .host-reviews .review-star {
   color: #ff8c38;
   margin-right: 5px;
+}
+
+
+/****** MEDIA QUERIES ******/
+
+@media (max-width: 900px) {
+  .heading {
+    max-width: 70%;
+  }
+
+  .hero-content {
+    max-width: 65%;
+  }
+
+  .section-hero a {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 651px) {
+  .heading {
+    max-width: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .section-hero a {
+    max-width: 100%;
+  }
 }

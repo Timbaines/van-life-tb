@@ -3,7 +3,7 @@ export default function Footer() {
 
     return (
         <footer>
-            &#169; {currentYear} #VANLIFE
+                &#169; {currentYear} #VANLIFE
         </footer>
     )
 }
