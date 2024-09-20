@@ -115,6 +115,10 @@ footer {
   transform: translate(1px, 1px);
 }
 
+.row {
+  max-width: 1980px;
+}
+
 /*** HOME PAGE ***/
 .section-hero {
   display: flex;
@@ -135,7 +139,7 @@ footer {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 42px;
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .hero-content {
@@ -208,9 +212,6 @@ footer {
   border-radius: 10px;
 }
 
-.row {
-  max-width: 1366px;
-}
 
 /*** VAN PAGES ***/
 .van-list-container {
